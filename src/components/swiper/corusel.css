@@ -1,0 +1,274 @@
+
+@import url('https://db.onlinewebfonts.com/c/a88bb86b6de077557ef8778b4f72f8bc?family=ft93');
+
+
+ .slider img{
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    background: rgba(0, 0, 0, 0);
+ }
+ .swiper .slider::before{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+ }
+
+ .swiper .swiper-button-prev{
+    position: absolute;
+    left: 86%;
+    top: 40%;
+    width: 54px;
+    height: 54px;
+ }
+
+ .swiper .swiper-button-next{
+    position: absolute;
+    right: 6%;
+    top: 40%;
+    width: 54px;
+    height: 54px;
+ }
+
+ .swiper .swiper-button-next::after,
+ .swiper .swiper-button-prev::after{
+    font-size: 30px;
+    line-height: 0;
+    width: 54px;
+    height: 54px;
+    background: transparent;
+    border-radius: 50%;
+    transition: 0.3s;
+    color: rgba(255, 255, 255, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(20px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+
+
+ .swiper .swiper-button-next:hover,
+ .swiper .swiper-button-prev:hover{
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.5);
+    color: rgba(255, 255, 255, 0.8);
+ }
+
+ .swiper .slider .banner{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100vh;
+    padding: 30px;
+    overflow: hidden;
+    background: transparent;
+    transition: 0.5s;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ }
+
+
+ .swiper .slider .banner img{
+    position: absolute;
+    left: 55%;
+    top: 20%;
+    transform: translateX(-50%);
+    transition:  0.4s ease;
+    max-width: 1000px;
+    z-index: 1;
+    background: transparent;
+ }
+ .swiper .slider .banner img:hover{
+   opacity: 0.8;
+   transition: all 0.3s ease;
+ }
+
+
+
+
+ .swiper .slider  .backscene{
+    position: absolute;
+    content: '';
+    top: 10%;
+    left: 30%;
+    background: transparent;
+    box-shadow: inset rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(20px);
+    width: 700px;
+    height: 700px;
+    border-radius: 50%;
+ }
+
+
+ .swiper .slider .banner .left{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+ }
+
+
+ .banner .left .features {
+    max-width: 400px;
+    margin-bottom: 100px;
+ }
+
+ .banner .left .features .rating{
+    color: #ffff;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 25px;
+ }
+
+
+ .banner .left .features .rating .score{
+    padding: 15px;
+    font-size: 2rem;
+    font-weight: 400;
+    color: var(--primary);
+    background: #ffffff;
+ }
+
+
+ .banner .left .features .content{
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+ }
+
+ .banner .left .features .pricing{
+    color: #ffffff;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+ }
+
+ .banner .left .features .pricing ion-icon{
+    padding: 15px;
+    font-size: 3rem;
+    font-weight: 400;
+    color: #ffffff;
+    background: rgba(255, 0, 0, 0.6);
+    transition: 0.3s;
+ }
+
+ .banner .left .features .pricing ion-icon:hover{
+    background: rgba(255, 0, 0, 0.9);
+ }
+
+ .banner .left .features .content h4{
+    color: #ffff;
+    font-size: 1.5rem;
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+ }
+
+
+ .banner .left .features .content span{
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    font-weight: 200;
+ }
+
+ .banner .left .features .content .subtitle{
+    color: var(--primary);    
+ }
+
+
+ .banner h1{
+    color: #ffffff;
+    font-size: 10rem;
+    letter-spacing: 5px;
+    line-height: 0.9;
+    z-index: 10;
+    text-transform: uppercase;
+    font-family: 'Bouhaus 93';
+ }
+
+
+
+
+
+
+
+
+
+ .swiper .slider .banner .right{
+    position: relative;
+    height: 100vh;
+    max-width: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    z-index: 100;
+ }
+
+ .banner .right .description {
+    padding: 30px 60px 0 0;
+    color: #ffffff;
+ }
+
+ .banner .right .description li{
+    list-style: none;
+ }
+
+ .banner .right .description h4{
+    display: inline-block;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+ }
+
+ .banner .right .description h4 ion-icon {
+    margin-right: 10px;
+ }
+
+ .banner .right .description p{
+    margin: 5px 0 25px 30px;
+    font-weight: 200;
+ }
+
+
+ .banner .right h2{
+    color: #ffffff;
+    font-size: 2.5rem;
+    font-weight: 200;
+    text-align: right;
+    text-transform: uppercase;
+ }
+
+ .banner .right iframe{
+    max-width: 400px;
+    max-height: 255px;
+ }
+
+
+ .sci{
+    color: #ffffff;
+    font-size: 1.5rem;
+    transition: 0.3s;
+    padding: 5px;
+ }
+
+ .sci li {
+    list-style: none;
+ }
+
+ .sci ion-icon:hover{
+    color: rgba(255, 0, 0, 0.9);
+ }
